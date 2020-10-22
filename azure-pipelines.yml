@@ -123,7 +123,7 @@ stages:
       displayName: 'Create or Update Azure Resource Group'
 
     - script: |
-        curl --fail --max-time 15 https://gophers-meetup-app.azurewebsites.net/fib 2>&1
+        curl --fail --max-time 15 https://infotechvedasmvtitle-app.azurewebsites.net/fib 2>&1
         if [ $? -ne 0 ]; then
           >&2 echo "Website not reachable"
         fi
