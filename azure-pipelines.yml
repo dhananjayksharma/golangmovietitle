@@ -11,7 +11,7 @@ stages:
     GOARCH: 'amd64'
   jobs:
   - job: BuildTestBackend
-    displayName: 'Build and Test Go Backend'
+    displayName: 'Build and Test Go Backend infotechvedas'
     pool:
       vmImage: 'Ubuntu 18.04'
     steps:
