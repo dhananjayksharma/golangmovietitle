@@ -112,7 +112,7 @@ stages:
     steps:
     - task: AzureResourceGroupDeployment@2
       inputs:
-        azureSubscription: 'azureConnection'
+        azureSubscription: 'Free Trial(ef3ad59f-4873-47ba-921a-633a05520850)'
         action: 'Create Or Update Resource Group'
         resourceGroupName: 'gophers-meetup-linz'
         location: 'westeurope'
