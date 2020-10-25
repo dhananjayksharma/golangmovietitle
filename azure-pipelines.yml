@@ -66,6 +66,7 @@ stages:
         codeCoverageTool: 'Cobertura'
         summaryFileLocation: '$(Build.SourcesDirectory)/demo-coverage.xml'
       displayName: 'Publish code coverage results'
+      
 - stage: PublishImage
   displayName: 'Publish Docker Image'
   jobs:
