@@ -97,7 +97,7 @@ stages:
       displayName: 'Build and Push Image'
       inputs:
         command: buildAndPush
-        repository: rstropek/demo
+        repository: dhananjayksharma/demo
         tags: |
           latest
           $(Build.BuildId)

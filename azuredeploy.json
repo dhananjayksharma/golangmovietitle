@@ -29,7 +29,7 @@
         }
     },
     "variables": {
-        "imageName": "rstropek/demo",
+        "imageName": "dhananjayksharma/demo",
         "servicePlanName": "[concat(parameters('siteName'), '-asp')]"
     },
     "resources": [
