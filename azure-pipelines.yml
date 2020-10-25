@@ -91,7 +91,7 @@ stages:
       displayName: 'Login to Docker Registry'
       inputs:
         command: login
-        containerRegistry: 'hubtokendocker'
+        containerRegistry: 'Docker Registry'
 
     - task: Docker@2
       displayName: 'Build and Push Image'
