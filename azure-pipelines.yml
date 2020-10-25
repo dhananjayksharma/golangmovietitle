@@ -88,10 +88,10 @@ stages:
       displayName: 'Copy executable to folder with Dockerfile'
 
     - task: Docker@2
-      displayName: 'Login to Docker Registry'
+      displayName: 'Login to DockerRegistryServiceConnection'
       inputs:
         command: login
-        containerRegistry: 'Docker Registry'
+        containerRegistry: 'DockerRegistryServiceConnection'
 
     - task: Docker@2
       displayName: 'Build and Push Image'
@@ -112,7 +112,7 @@ stages:
     steps:
     - task: AzureResourceGroupDeployment@2
       inputs:
-        azureSubscription: 'Azure Classic'
+        azureSubscription: 'azureConnection'
         action: 'Create Or Update Resource Group'
         resourceGroupName: 'gophers-meetup-linz'
         location: 'westeurope'
