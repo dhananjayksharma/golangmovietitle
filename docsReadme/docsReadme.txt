@@ -19,3 +19,8 @@ trigger:
 - master
 
 
+DockerID:
+dhananjayksharma
+dhananjayksharma@gmail.com
+medks1975DKS2019
+
