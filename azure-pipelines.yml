@@ -66,7 +66,7 @@ stages:
         codeCoverageTool: 'Cobertura'
         summaryFileLocation: '$(Build.SourcesDirectory)/demo-coverage.xml'
       displayName: 'Publish code coverage results'
-      
+     
 - stage: PublishImage
   displayName: 'Publish Docker Image'
   jobs:
@@ -121,6 +121,7 @@ stages:
         overrideParameters: '-siteName infotechvedas-golangmovietitle -demoAppImageVersion $(Build.BuildId)'
         deploymentMode: 'Incremental'
       displayName: 'Create or Update Azure Resource Group'
+
 
     - script: |
         curl --fail --max-time 15 https://infotechvedas-golangmovietitle.azurewebsites.net/fib 2>&1
