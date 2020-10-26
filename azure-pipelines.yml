@@ -122,8 +122,9 @@ stages:
         deploymentMode: 'Incremental'
       displayName: 'Create or Update Azure Resource Group'
 
+
     - script: |
-        curl --fail --max-time 15 http://www.infotechvedas.com/fib 2>&1
+        curl --fail --max-time 15 http://gophers-meetup-app/fib 2>&1
         if [ $? -ne 0 ]; then
           >&2 echo "Website not reachable"
         fi
