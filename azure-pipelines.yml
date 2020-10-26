@@ -118,12 +118,12 @@ stages:
         location: 'westeurope'
         templateLocation: 'Linked artifact'
         csmFile: 'azuredeploy.json'
-        overrideParameters: '-siteName gophers-meetup-app -demoAppImageVersion $(Build.BuildId)'
+        overrideParameters: '-siteName infotechvedas-golangmovietitle -demoAppImageVersion $(Build.BuildId)'
         deploymentMode: 'Incremental'
       displayName: 'Create or Update Azure Resource Group'
 
     - script: |
-        curl --fail --max-time 15 https://infotechvedas.app.azurewebsites.net/fib 2>&1
+        curl --fail --max-time 15 https://infotechvedas-golangmovietitle.azurewebsites.net/fib 2>&1
         if [ $? -ne 0 ]; then
           >&2 echo "Website not reachable"
         fi
